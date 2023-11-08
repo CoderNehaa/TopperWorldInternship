@@ -11,16 +11,19 @@
 </head>
 
 <body>
-    <section id="home">
+    <section id="home" class="bg-video">
+        
+        <video autoplay muted loop>
+            <source src="./assets/Travel the World Stock Footage - Travel the World Free Stock Videos - Travel the World No Copyright.mp4" type="video/mp4">
+        </video>
         <!-- Navbar -->
         <nav>
             <div class="flex navbar-menu">
                 <i class="fa-solid fa-globe logo"></i>    
-                <span> <a href="#destination"> Destination </a> </span>
-                <span> <a href="#"> Packages </a> </span>
                 <span> <a href="#about"> About us </a> </span>
-                <span> <a href="#"> Reviews </a> </span>
-                <span> <a href="#"> Contact </a> </span>                
+                <span> <a href="#customization"> Customized trip </a> </span>
+                <span> <a href="#trips"> Trips </a> </span>
+                <span> <a href="#reviews"> Reviews </a> </span>         
             </div>
         </nav>
 
@@ -32,21 +35,289 @@
     </section>
     
     <!-- About us  -->
-    <section id="about" class="flex">
-        <div class="aboutHeading">
+    <section id="about" class="flex"> 
+        <div id="aboutHeading">
             <h1> ABOUT US </h1>
         </div>
         <div class="aboutDescription">
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repudiandae corrupti quasi voluptatibus dignissimos perferendis, modi consequuntur quidem tempora ipsum, accusamus ullam a eum pariatur. Consequuntur aperiam doloribus odio provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repudiandae corrupti quasi voluptatibus dignissimos perferendis, modi consequuntur quidem tempora ipsum, accusamus ullam a eum pariatur. Consequuntur aperiam doloribus odio provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ab unde est ad similique, optio laboriosam sequi non, perspiciatis doloremque, quo maiores magnam! Libero praesentium quam amet fuga? Doloremque, quos. </p> 
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, repudiandae corrupti quasi voluptatibus dignissimos perferendis, modi consequuntur quidem tempora ipsum, accusamus ullam a eum pariatur. Consequuntur aperiam doloribus odio provident. </p>
+            <p> Welcome to Wonder world, where adventure meets relaxation, and dreams turn into unforgettable journeys. We take pride in crafting extraordinary travel experiences for our valued clients. As a premier travel company, we specialize in curating holiday packages that cater to your every whim and wanderlust. Our dedicated team of travel experts understands that every traveler is unique, and we offer customized trips that tailor to your individual preferences and interests. For those seeking hassle-free adventures, we offer an array of meticulously designed readymade packages that take you to the most sought-after destinations, ensuring a stress-free and immersive travel experience. </p> 
+            <p> What truly sets us apart is the invaluable feedback from our satisfied customers. We proudly showcase their reviews, reflecting their genuine experiences and the exceptional service they've received. At Wonder World, we are committed to turning your travel aspirations into reality, creating memories that last a lifetime. Embark on your next adventure with us, and let us be your trusted guide in the world of wanderlust. </p>
         </div>
     </section>
-    
-    <section id="reviews"> </section>
 
-    <video autoplay muted loop class="bg-video">
-        <source src="./assets/Travel the World Stock Footage - Travel the World Free Stock Videos - Travel the World No Copyright.mp4" type="video/mp4">
-    </video>
+    <!-- Customized trip -->
+    <section class="flex" id="customization"> 
+        <div>
+            <div id="customize_section_headline"> Your Journey, Your Way : Explore the world your way with our customizable travel experiences. </div>
+            <p> Unlock your dream destination with our personalized travel customization service, where your journey is tailored to your every desire. Experience travel like never before with our bespoke travel customization service, where every detail is meticulously crafted to match your unique preferences. </p>
+            <button> Learn more </button>
+        </div>
+    </section>
+
+    <!-- Trips section -->
+    <section id="trips">
+        <h1> Trips <i class="fa-solid fa-route"></i> </h1>   
+        <div id="tripsContainer" class="flex"> 
+            <div class="trip">
+                <div class="image-container">
+                    <div class="overlay"> Learn More </div>
+                    <img src="./assets/Goa.jpeg" class="hoverEffect" />
+                </div>
+                <div> Trip 2-3 days </div>
+                <p> Adventure awaits just a heartbeat away on this 2-3 day escape. </p>
+            </div>
+
+            <div class="trip">
+                <div class="image-container">
+                    <div class="overlay"> Learn More </div>
+                    <img src="https://i.redd.it/1v6cvnjd2gp21.jpg"/>
+                </div>  
+                <div> Trip 4-5 days </div>
+                <p> Embark on a 4-5 day journey of discovery and relaxation. </p>    
+            </div>
+            
+            <div class="trip">
+                <div class="image-container">
+                    <div class="overlay"> Learn More </div>
+                    <img src="./assets/nature.jpeg"/>
+                </div>  
+                <div> Trip 6-7 days </div>
+                <p> Set out on a week-long odyssey filled with unforgettable experiences. </p>    
+            </div>
+
+            <div class="trip">
+                <div class="image-container">
+                    <div class="overlay"> Learn More </div>
+                    <img src="./assets/ladakh.jpg"/>
+                </div>  
+                <div> Trip 1-2 weeks </div>
+                <p> Experience the world on a 1-2 week adventure of a lifetime. </p>    
+            </div>
+            
+            <div class="trip">
+                <div class="image-container">
+                    <div class="overlay"> Learn More </div>
+                    <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2020/01/cover-rishikesh-in-summer_8th-Jan.jpg"/>
+                </div>  
+                <div> 10 Days trip </div>
+                <p> Exploration and new horizons await on this unforgettable journey. </p>    
+            </div>
+
+            <div class="trip">
+                <div class="image-container">
+                    <div class="overlay"> Learn More </div>
+                    <img src="./assets/mountains.avif"/>
+                </div>  
+                <div> 15 days trip </div>
+                <p> Discovery, culture, and adventure that will leave lasting memories. </p>    
+            </div>
+            
+            <div class="trip">
+                <div class="image-container">
+                    <div class="overlay"> Learn More </div>
+                    <img src="./assets/manali.jpeg"/>
+                </div>  
+                <div> 1 month trip </div>
+                <p> Embark on a month voyage for the ultimate travel experience. </p>    
+            </div>
+
+            <div class="trip">
+                <div class="image-container">
+                    <div class="overlay"> Learn More </div>
+                    <img src="./assets/meghalaya.jpeg"/>
+                </div>
+                <div> 2 month trip </div>
+                <p> Two months to see the world and make memories that last a lifetime. </p>    
+            </div>
+        </div>  
+        <button> View all trips </button>
+    </section>
+
+    <!-- Reviews section -->
+    <section id="reviews" class="flex"> 
+        <h1> What our customers are saying. </h1>
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, impedit consequatur exercitationem libero distinctio dolores assumenda minus eaque laudantium doloremque vitae?</p>
+        <div class="flex" id="reviews-container">
+            
+            <div id="review1" class="review-box"> 
+                <div class="flex" style="justify-content: space-between;">
+                    <div> <i class="fa-solid fa-user user"></i> <span> John Smith </span> </div>
+                    <div>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                    </div>
+                </div>
+                <p class="review"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum, necessitatibus quisquam fuga distinctio reprehenderit recusandae blanditiis laudantium facilis nihil repellat vitae ipsum ratione saepe ut! </p> 
+            </div>
+
+            <div id="review2" class="review-box"> 
+                <div class="flex" style="justify-content: space-between;">
+                    <div>
+                        <i class="fa-solid fa-user user"></i>
+                        <span> Emily Johnson </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                    </div>
+                </div>
+                <p class="review"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum, necessitatibus quisquam fuga distinctio reprehenderit recusandae blanditiis laudantium facilis nihil repellat vitae ipsum ratione saepe ut, corrupti nesciunt inventore nam! </p> 
+            </div>
+
+            <div id="review3" class="review-box"> 
+                <div class="flex" style="justify-content: space-between;">
+                    <div>
+                        <i class="fa-solid fa-user user"></i>
+                        <span> Michael Davis </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                    </div>
+                </div>
+                <p class="review"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum, necessitatibus quisquam fuga distinctio reprehenderit recusandae blanditiis laudantium facilis nihil repellat vitae ipsum ratione saepe ut, corrupti nesciunt inventore nam! </p> 
+            </div>
+
+            <div id="review4" class="review-box"> 
+                <div class="flex" style="justify-content: space-between;">
+                    <div>
+                        <i class="fa-solid fa-user user"></i>
+                        <span> Sarah Brown </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                    </div>
+                </div>
+                <p class="review"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum, necessitatibus quisquam fuga distinctio reprehenderit recusandae blanditiis laudantium facilis nihil repellat vitae ipsum ratione saepe ut, corrupti nesciunt inventore nam! </p> 
+            </div>
+
+            <div id="review5" class="review-box"> 
+                <div class="flex" style="justify-content: space-between;">
+                    <div>
+                        <i class="fa-solid fa-user user"></i>
+                        <span> David Wilson </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                    </div>
+                </div>
+                <p class="review"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum, necessitatibus quisquam fuga distinctio reprehenderit recusandae blanditiis laudantium facilis nihil repellat vitae ipsum ratione saepe ut, corrupti nesciunt inventore nam! </p> 
+            </div>
+
+            <div id="review6" class="review-box"> 
+                <div class="flex" style="justify-content: space-between;">
+                    <div>
+                        <i class="fa-solid fa-user user"></i>
+                        <span> Jessica Miller </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                    </div>
+                </div>
+                <p class="review"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum, necessitatibus quisquam fuga distinctio reprehenderit recusandae blanditiis laudantium facilis nihil repellat vitae ipsum ratione saepe ut, corrupti nesciunt inventore nam! </p> 
+            </div>
+
+            <div id="review7" class="review-box"> 
+                <div class="flex" style="justify-content: space-between;">
+                    <div>
+                        <i class="fa-solid fa-user user"></i>
+                        <span> James Jones </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                    </div>
+                </div>
+                <p class="review"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum, necessitatibus quisquam fuga distinctio reprehenderit recusandae blanditiis laudantium facilis nihil repellat vitae ipsum ratione saepe ut, corrupti nesciunt inventore nam! </p> 
+            </div>
+
+
+            <div id="review8" class="review-box"> 
+                <div class="flex" style="justify-content: space-between;">
+                    <div>
+                        <i class="fa-solid fa-user user"></i>
+                        <span> Olivia Taylor </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                    </div>
+                </div>
+                <p class="review"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum, necessitatibus quisquam fuga distinctio reprehenderit recusandae blanditiis laudantium facilis nihil repellat vitae ipsum ratione saepe ut, corrupti nesciunt inventore nam! </p> 
+            </div>
+
+            <div id="review9" class="review-box"> 
+                <div class="flex" style="justify-content: space-between;">
+                    <div>
+                        <i class="fa-solid fa-user user"></i>
+                        <span> Daniel Clark </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                    </div>
+                </div>
+                <p class="review"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum, necessitatibus quisquam fuga distinctio reprehenderit recusandae blanditiis laudantium facilis nihil repellat vitae ipsum ratione saepe ut! </p> 
+            </div>
+
+            <div id="review10" class="review-box"> 
+                <div class="flex" style="justify-content: space-between;">
+                    <div>
+                        <i class="fa-solid fa-user user"></i>
+                        <span> Sophia White </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                        <i class="fa-solid fa-star yellowStar"></i>
+                    </div>
+                </div>
+                <p class="review"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum, necessitatibus quisquam fuga distinctio reprehenderit recusandae blanditiis laudantium facilis nihil repellat vitae ipsum ratione saepe ut! </p> 
+            </div>
+      
+        </div>
+        <button id="newReview"> Leave a review </button>
+    </section>
+
+    <script>
+        const text = document.getElementById('animated-text').textContent;
+        document.getElementById('animated-text').innerHTML = ''
+        let temp = ''
+        let index = 0;
+
+        const animationInterval = setInterval(() => {
+            if (index < text.length) {
+                temp = temp + text.charAt(index);
+                document.getElementById('animated-text').innerHTML = temp;
+                index++;
+            } else {
+                clearInterval(animationInterval); 
+            }
+        }, 100);
+
+    </script>
     
 </body>
 </html> 
