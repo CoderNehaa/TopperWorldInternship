@@ -1,7 +1,7 @@
 body{
     height: 100%;
     font-family: math;
-    min-height: 110vh;
+    /* min-height: 110vh; */
     text-align: center;
     margin: 0%;
 }
@@ -33,13 +33,26 @@ section{
 }
 
 .navbar-menu span{
+    font-weight: bold;
     padding: 8px 12px;
     margin: 0px 15px;
     border: 2px solid transparent;
 }
 
-.logo{
+.navbar-menu i{
     font-size: xx-large;
+}
+
+.navbar-menu span:hover{
+    background-color: wheat;
+    transform: scale(1.2);
+    /* border-radius: 45%; */
+    opacity: 0.7;
+    transition: all 1s;
+}
+
+.hamberger-icon{
+    display: none;
 }
 
 /* Page headline - brand */
@@ -58,7 +71,8 @@ section{
 }
 
 /* Brand slogan */  
-#animated-text {
+#brand-slogan {
+    color: #f9a96e;
     white-space: nowrap;
     font-size: 40px;
     overflow: hidden;
@@ -73,11 +87,23 @@ section{
     align-items: center;
 }
 
-#aboutHeading{
+#animate_about_heading{
     justify-content: center;
     align-items: center;
     font-size: xx-large;
     width: 20vw;
+}
+
+.aboutHeading span{
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateY(50px);
+    display: inline-block;
+}
+
+.aboutHeading span.fade {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .aboutDescription{
@@ -87,6 +113,10 @@ section{
     letter-spacing: 1px;
     line-height: 30px;
     text-align: justify;
+}
+
+.aboutDescription p{
+    line-height: 50px;
 }
 
 /* Trips section */
@@ -189,6 +219,17 @@ section{
     margin: 10px 5px 5px 0;
 }
 
+.reviewsHeading span{
+    opacity: 0;
+    color: aliceblue;
+    transition: all 0.5s ease;
+}
+
+.reviewsHeading span.coloring{
+    opacity: 1;
+    color: black;
+}
+
 /* Customize trip */
 
 #customization{
@@ -204,11 +245,15 @@ section{
     color: #1b2c2a;
 }
 
-#customize_section_headline{
+.customize_section_headline{
     letter-spacing: 4px;
     font-size: xxx-large;
     font-family: cursive;
     font-weight: bolder;
+}
+
+.customize_section_headline.move{
+    transform: translateY(-50px)
 }
 
 #customization p{
@@ -241,3 +286,130 @@ button{
 button:hover{
     cursor: pointer;
 }
+
+
+/* Responsiveness */
+@media screen and (max-width:1400px) {
+    #trips{
+        height: auto;
+    }
+    #about{
+        height: auto;
+    }
+    #reviews{
+        height: auto;
+    }
+    #animate_about_heading{
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    #brand-name{
+        font-size: 100px;
+    }
+    #brand-slogan{
+        font-size: 30px;
+    }
+    .aboutDescription{
+        font-size: 15px;
+    }
+    .aboutDescription p{
+        line-height: 35px;
+    }
+    #customization{
+        padding: 100px;
+    }
+    .customize_section_headline{
+        font-size: xx-large;
+    }
+}
+
+@media screen and (max-width:875px) {
+    #about{
+        flex-direction: column;
+    }
+    #animate_about_heading{
+        font-size: large;
+        width: auto;
+    }
+}
+
+@media screen and (max-width:760px){
+    .navbar-menu span{
+        display: none;
+    }   
+    .hamberger-icon{
+        display: block;
+    }
+    #customization{
+        padding: 80px;
+    }
+    #customization p{
+        color: #efbbc4;
+    }
+    .review{
+        width: 250px;
+    }
+    .trip{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    nav{
+        max-width: 100vw;
+    }
+    .navbar-menu{
+        font-size: 10px;
+    }
+    #brand-slogan{
+        font-size: 25px;
+    }
+    #customization{
+        padding: 50px;
+    }
+    .trip{
+        width: 220px;
+    }
+    .review{
+        width: 200px;
+    }
+    .customize_section_headline{
+        font-size: x-large;
+    }
+    #customization p{
+        font-size: 17px;    
+    }
+    #brand-name{
+        font-size: 80px;
+    }
+    .aboutDescription p{
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    section{
+        overflow-x: hidden;
+        box-sizing: border-box;
+        width: 100vw;
+    }
+    .navbar-menu i{
+        font-size: medium;
+    }
+    #brand-slogan{
+        font-size: 18px;
+    }
+    .trip{
+        width: 300px;
+    }
+    .review{
+        width: 300px;
+    }
+    #customization{
+        color: aliceblue;
+    }   
+}
+
+

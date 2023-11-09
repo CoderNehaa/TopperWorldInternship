@@ -7,7 +7,6 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src="https://kit.fontawesome.com/da6c19888d.js" crossorigin="anonymous"></script>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='script.js'></script>
 </head>
 
 <body>
@@ -23,21 +22,22 @@
                 <span> <a href="#about"> About us </a> </span>
                 <span> <a href="#customization"> Customized trip </a> </span>
                 <span> <a href="#trips"> Trips </a> </span>
-                <span> <a href="#reviews"> Reviews </a> </span>         
+                <span> <a href="#reviews"> Reviews </a> </span>    
+                <i class="fa-solid fa-bars hamberger-icon"></i>     
             </div>
         </nav>
 
         <!-- Brand heading and slogan -->
         <div id="headline" class="flex">
             <span id="brand-name"> Wonder World </span>
-            <span id="animated-text">Website to help you wander the wonderful world.</span>
+            <div id="brand-slogan">Website to help you wander the wonderful world.</div>
         </div>
     </section>
     
     <!-- About us  -->
     <section id="about" class="flex"> 
-        <div id="aboutHeading">
-            <h1> ABOUT US </h1>
+        <div id="animate_about_heading">
+            <h1 class="aboutHeading"> ABOUT US </h1>
         </div>
         <div class="aboutDescription">
             <p> Welcome to Wonder world, where adventure meets relaxation, and dreams turn into unforgettable journeys. We take pride in crafting extraordinary travel experiences for our valued clients. As a premier travel company, we specialize in curating holiday packages that cater to your every whim and wanderlust. Our dedicated team of travel experts understands that every traveler is unique, and we offer customized trips that tailor to your individual preferences and interests. For those seeking hassle-free adventures, we offer an array of meticulously designed readymade packages that take you to the most sought-after destinations, ensuring a stress-free and immersive travel experience. </p> 
@@ -48,7 +48,7 @@
     <!-- Customized trip -->
     <section class="flex" id="customization"> 
         <div>
-            <div id="customize_section_headline"> Your Journey, Your Way : Explore the world your way with our customizable travel experiences. </div>
+            <div class="customize_section_headline"> Your Journey, Your Way : Explore the world your way with our customizable travel experiences. </div>
             <p> Unlock your dream destination with our personalized travel customization service, where your journey is tailored to your every desire. Experience travel like never before with our bespoke travel customization service, where every detail is meticulously crafted to match your unique preferences. </p>
             <button> Learn more </button>
         </div>
@@ -135,7 +135,8 @@
 
     <!-- Reviews section -->
     <section id="reviews" class="flex"> 
-        <h1> What our customers are saying. </h1>
+        <h1 class="reviewsHeading">What our customers are saying.</h1>
+
         <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, impedit consequatur exercitationem libero distinctio dolores assumenda minus eaque laudantium doloremque vitae?</p>
         <div class="flex" id="reviews-container">
             
@@ -300,24 +301,6 @@
         </div>
         <button id="newReview"> Leave a review </button>
     </section>
-
-    <script>
-        const text = document.getElementById('animated-text').textContent;
-        document.getElementById('animated-text').innerHTML = ''
-        let temp = ''
-        let index = 0;
-
-        const animationInterval = setInterval(() => {
-            if (index < text.length) {
-                temp = temp + text.charAt(index);
-                document.getElementById('animated-text').innerHTML = temp;
-                index++;
-            } else {
-                clearInterval(animationInterval); 
-            }
-        }, 100);
-
-    </script>
-    
+    <script src="script.js"> </script>
 </body>
 </html> 
