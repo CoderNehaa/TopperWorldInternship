@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* The :root CSS pseudo-class matches the root element of a tree representing the document. In HTML, :root represents the <html> element and is identical to the selector html */
+:root{
+    /* Declaring global css variables */
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+html{
+    font-size: 62.5%;
+    /* The overflow-x property specifies whether to add a scroll bar, or display overflow content of a block-level element, when it overflows at the left and right edges. */
+    /* Default value: visible, other values : hidden, scroll, auto, inherit, auto */
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .5s;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+}
