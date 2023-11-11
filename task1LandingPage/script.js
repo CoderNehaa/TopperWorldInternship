@@ -13,3 +13,25 @@ const animationInterval = setInterval(() => {
         clearInterval(animationInterval); 
     }
 }, 100);
+
+// Clicking on hamberger icon
+const navbarMenu = document.querySelector('.navbar-menu');
+const hambergerIcon = document.querySelector('.hamberger-icon');
+const closeNavbar = document.querySelector('.closeNavbar');
+const logo = document.querySelector('.logo');
+
+hambergerIcon.addEventListener('click', () => {
+    navbarMenu.style.display = 'flex';
+    closeNavbar.style.display = 'block';
+    hambergerIcon.style.display = 'none';
+    logo.style.display = 'none';
+})
+
+closeNavbar.addEventListener('click', () => {
+    navbarMenu.style.display = 'none';
+    closeNavbar.style.display = 'none';
+    hambergerIcon.style.display = 'block';
+    logo.style.display = 'block';
+})
+
+const sections = document.getElementsByTagName('section');
