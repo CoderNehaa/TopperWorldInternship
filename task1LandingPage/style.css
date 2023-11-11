@@ -1,7 +1,6 @@
 body{
     height: 100%;
     font-family: math;
-    /* min-height: 110vh; */
     text-align: center;
     margin: 0%;
 }
@@ -26,21 +25,20 @@ section{
 
 /* Navbar */
 
-.navbar-menu{
+.navbar{
+    justify-content: space-around;
     letter-spacing: 1px;
     font-size: 20px;
-    justify-content: space-evenly;
+}
+
+.navbar i{
+    font-size: xx-large;
 }
 
 .navbar-menu span{
     font-weight: bold;
     padding: 8px 12px;
     margin: 0px 15px;
-    border: 2px solid transparent;
-}
-
-.navbar-menu i{
-    font-size: xx-large;
 }
 
 .navbar-menu span:hover{
@@ -49,6 +47,14 @@ section{
     /* border-radius: 45%; */
     opacity: 0.7;
     transition: all 1s;
+}
+
+.closeNavbar{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    font-weight: bolder;
+    display: none;
 }
 
 .hamberger-icon{
@@ -329,16 +335,19 @@ button:hover{
     #about{
         flex-direction: column;
     }
-    #animate_about_heading{
+    #aboutHeading{
         font-size: large;
         width: auto;
     }
 }
 
 @media screen and (max-width:760px){
-    .navbar-menu span{
+    .navbar-menu{
         display: none;
     }   
+    body{
+        padding: 0%;
+    }
     .hamberger-icon{
         display: block;
     }
@@ -362,6 +371,7 @@ button:hover{
     }
     .navbar-menu{
         font-size: 10px;
+        font-weight: bolder;
     }
     #brand-slogan{
         font-size: 25px;
