@@ -12,10 +12,10 @@
 /* The :root CSS pseudo-class matches the root element of a tree representing the document. In HTML, :root represents the <html> element and is identical to the selector html */
 :root{
     /* Declaring global css variables */
-    --bg-color: #1f242d;
-    --second-bg-color: #323946;
+    --bg-color: aliceblue;
+    --second-bg-color: lavender;
     --text-color: #fff;
-    --main-color: #0ef;
+    --main-color: #29429afc;
 }
 
 html{
@@ -27,7 +27,6 @@ html{
 
 body{
     background: var(--bg-color);
-    color: var(--text-color);
 }
 
 /* Header */
@@ -38,10 +37,8 @@ header{
     left: 0%;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: var(--main-color);
+    justify-content: space-between !important;
     z-index: 100;
 }
 
@@ -52,15 +49,23 @@ header{
     cursor: default;
 }
 
+.menu-icon{
+    display: none;
+    font-size: 2rem;
+}
+
 .navbar a{
     font-size: 1.7rem;
     color: var(--text-color);
     margin-left: 4rem;
-    transition: .5s;
+    transition: all 1s;
+    padding: 5px 10px;
 }
 
 .navbar a:hover{
-    color: var(--main-color);
+    color: #29429afc;
+    font-size: 1.3rem;
+    box-shadow: inset 100px 0 0 0 aliceblue;
 }
 
 /* Main */
@@ -71,12 +76,6 @@ section{
 }
 
 /* Home section */
-
-.home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .home-content h3{
     letter-spacing: 2px;
@@ -127,21 +126,14 @@ section{
 }
 
 /* About section style */
+
 .about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
     background: var(--second-bg-color);
 }
 
 .about-img img{
     width: 35vw;
-}
-
-.heading{
-    text-align: center;
-    font-size: 4.5rem;
 }
 
 .about-content{
@@ -153,7 +145,6 @@ section{
 }
 
 .about-content h3{
-    margin-top: 2rem;
     font-size: 2.5rem;
 }
 
@@ -166,14 +157,7 @@ section{
 
 /* Experience section style */
 
-.experience h2{
-    margin-bottom: 5rem;
-}
-
 .experience-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
     letter-spacing: 1px;
@@ -183,9 +167,8 @@ section{
     flex: 1 1 30rem;
     background: var(--second-bg-color);
     padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid var(--bg-color);
+    border-radius: 3rem;
+    border: .3rem solid var(--bg-color);
     transition: .5s ease;
 }
 
@@ -215,16 +198,131 @@ section{
     margin: 1rem 2rem 3rem 2rem;
 }
 
+/* Projects section style */
 
-
-
-/* Styles according to tag name */
-span{
-    color: var(--main-color);
+.projects{
+    background-color: var(--second-bg-color);
 }
 
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap:2.5rem;
+}
 
+.projects-container .project-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.project-box img{
+    width: 100%;
+    transition: .5s ease;
+}
+
+.project-box:hover img{
+    transform: scale(1.1);
+}
+
+.project-box .project-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), var(--main-color));
+    flex-direction: column;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.project-box:hover .project-layer{
+    color: var(--text-color);
+    transform: translateY(0);
+}
+
+.project-layer h4{
+    font-size: 2.5rem;
+}
+
+.project-layer p{
+    font-size: 1.5rem;
+    margin: .3rem 0 1rem;
+}
+
+.project-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.project-layer a i{
+    font-size: 1.8rem;
+}
+
+/* Contact section style */
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 49%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form textarea{
+    width: 100%;
+    resize: none;
+}
+
+.top{ 
+    height: 50px;
+    width: 50px;
+    font-size: xx-large;
+    position: fixed;
+    right: 50px;
+    bottom: 10px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+
+.top i{
+    color: black;
+}
+
+.top a i:hover{
+    color: #fff;
+}
 /* Common classes */
+
+.heading{
+    font-size: 4.5rem;
+    margin-bottom: 5rem;
+}
+
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -236,9 +334,107 @@ span{
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
+    margin: 10px;
 }
 
 .btn:hover{
     box-shadow: none;
 }
 
+span{
+    color: var(--main-color);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsiveness */
+
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:991px){
+    .header{
+        padding: 2rem 3%;
+    }
+
+    section{
+        padding: 6rem 3% 2rem;
+    }
+}
+
+@media (max-width:768px){
+    .menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0.5rem 1rem rgba(0, 0, 0, .2);
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        display: none;
+    }
+    .home{
+        flex-direction: column;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .about img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .projects-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:617px){
+    .projects-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .contact form .input-box input{
+        width: 100%;
+    }
+}
+
+@media (max-width:365px){
+    .home-img img{
+        width: 90vw;
+    }
+    .about-img img{
+        width: 90vw;
+    }
+}
