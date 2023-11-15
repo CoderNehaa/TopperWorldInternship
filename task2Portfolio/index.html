@@ -9,13 +9,14 @@
     <script src="https://kit.fontawesome.com/da6c19888d.js" crossorigin="anonymous"></script>
     <!-- Custom css -->
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    
 </head>
+
 <body>
     <!-- header design -->
-    <header class="header">
+    <header class="header flex-center">
         <a href="#" class="logo"> Portfolio </a>
 
+        <div class="menu-icon"> <i class="fa-solid fa-bars"></i> </div>
         <nav class="navbar">
             <a href="#home"> Home </a>
             <a href="#about"> About </a>
@@ -26,20 +27,20 @@
     </header>
     
     <!-- Home section design -->
-    <section class="home" id="home">
+    <section class="home flex-center" id="home">
         <div class="home-content">
             <h3> Hello, it's me </h3>
             <h1>Neha Nagda </h1>
             <h3> And, I'm <span> Coding enthusiast </span></h3>
-            <p> I love playing with my front-end toolkit , which includes HTML, CSS, JS and react, and see its magic live on my screen. </p>
+            <p> I love playing with my front-end toolkit (which includes HTML, CSS, JavaScript and React), and watching its magic live on my screen. </p>
 
             <div class="social-media">
-                <a href="#"><i class="fa-brands fa-linkedin"></i> </a>
-                <a href="#"> <i class="fa-brands fa-github"></i> </a>
-                <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
-                <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/neha-nagda-5b1458218/" target="_blank"><i class="fa-brands fa-linkedin"></i> </a>
+                <a href="https://github.com/CoderNehaa/" target="_blank"> <i class="fa-brands fa-github"></i> </a>
+                <a href="https://www.facebook.com/profile.php?id=100075215082571/" target="_blank"> <i class="fa-brands fa-facebook"></i> </a>
+                <a href="https://twitter.com/nagdaneha97/" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
             </div>
-            <a href="#" class="btn"> Download CV </a>
+            <a href="https://drive.google.com/file/d/1CNVY4gAAcpfrg7WBprcu_w--rwHwcTub/view" target="_blank" class="btn"> View my CV </a>
         </div>
         
         <div class="home-img">
@@ -48,48 +49,148 @@
     </section>
 
     <!-- About section design -->
-    <section class="about" id="about">
+    <section class="about flex-center" id="about">
         <div class="about-img">
             <img src="https://st5.depositphotos.com/3917667/63259/i/450/depositphotos_632598682-stock-photo-woman-stylish-official-suit-working.jpg" alt="neha">
         </div>
 
         <div class="about-content">
-            <h1 class="heading"> About <span> Me </span> </h1>
+            <h1 class="heading text-center"> About <span> Me </span> </h1>
             <h3> Frontend Developer </h3>
-            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus repudiandae pariatur voluptates laborum eveniet nihil ratione consequatur facilis quam nulla amet at impedit perferendis veniam commodi dolores explicabo nesciunt error dolor ipsa itaque illum, debitis libero! Neque, quis. Corporis quos pariatur deserunt delectus officiis voluptates id? </p>
-            <a href="#" class="btn"> Read more </a>
+            <p> I'm Neha Nagda, currently working as Content Reviewer at Tech Firefly, and I'm passionate about the tech and coding world. My journey in the
+                world of programming started by enrolling into Coding Ninja's Career Camp full stack web development batch. I believe in the power of continous learning and I'm always seeking opportunities to expand my knowledge.
+            </p>
+            <a href="./about.html" class="btn"> Read more </a>
         </div>
 
     </section>
 
     <!-- Experience section design -->
     <section class="experience" id="experience">
-        <h2 class="heading"> Previous <span> Experience </span></h2>
+        <h2 class="heading text-center"> Previous <span> Experience </span></h2>
 
-        <div class="experience-container">
+        <div class="experience-container flex-center">
             
-            <div class="experience-box">
+            <div class="experience-box text-center">
                 <i class="fa-solid fa-code"></i>
                 <h3>Web Development Intern </h3>
                 <h4> <span> Topperworld (Working) </span> </h4>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, id temporibus? Error reiciendis modi doloremque repellat magni ducimus porro veritatis? </p>
+                <p> Developed three key projects: a visually appealing landing page, a personalized portfolio, and a functional calculator using HTML, CSS and Javascript. </p>
             </div>
             
-            <div class="experience-box">
+            <div class="experience-box text-center">
                 <i class="fa-solid fa-code"></i>
                 <h3>Web Development Intern </h3>
                 <h4> <span> Codsoft (1 month) </span> </h4>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, id temporibus? Error reiciendis modi doloremque repellat magni ducimus porro veritatis? </p>
+                <p> Developed three key projects: a visually appealing landing page, a personalized portfolio, and a functional calculator using HTML, CSS and Javascript. </p>
             </div>
             
-            <div class="experience-box">
+            <div class="experience-box text-center">
                 <i class="fa-solid fa-laptop"></i>
                 <h3>Content Reviewer </h3>
                 <h4> <span> Tech Firefly ( 1.5 yr ) </span> </h4>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, id temporibus? Error reiciendis modi doloremque repellat magni ducimus porro veritatis? </p>
+                <p> Reviewed & rated Google feed ads based on the ad image, headline, landing page quality. Gained knowledge on various topics like clickbait, ad creation skills, etc. </p>
             </div>
         </div>
     </section>
+
+    <!-- Projects section design -->
+    <section class="projects" id="projects">
+        <h2 class="heading text-center">Latest <span> projects </span> </h2>
+        <div class="projects-container">
+
+            <div class="project-box">
+                <img src="./assets/busybuy.png" alt=""/>
+                <div class="project-layer flex-center">
+                    <h4> BusyBuy </h4>
+                    <p> This is an e-commerce website, where user can look any product details and purchase products after creating their account, this site is developed using react and redux.
+                    </p>
+                    <a href="https://busybuy-redux.netlify.app/" target="_blank"> 
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> 
+                    </a>
+                </div>
+            </div>
+        
+            <div class="project-box">
+                <img src="./assets/fotofolio.png" alt=""/>
+                <div class="project-layer flex-center">
+                    <h4> FotoFolio </h4>
+                    <p>This is a photo album app, where you can create albums and store your favorite photos. This project is developed using react and firestore database.
+                    </p>
+                    <a href="https://fotofolio.netlify.app/" target="_blank"> 
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> 
+                    </a>
+                </div>
+            </div>
+    
+            <div class="project-box">
+                <img src="./assets/superhero-hunt-app.png" alt=""/>
+                <div class="project-layer flex-center">
+                    <h4> Superhero hunt app </h4>
+                    <p>This web application allows you to search for superheroes, view details about them, and add your favorite superheroes to a personalized favorites list. </p>
+                    <a href="https://codernehaa.github.io/Super-hero-hunt-app/home.html" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            </div>
+            
+            <div class="project-box">
+                <img src="./assets/to-do-list.png" alt=""/>
+                <div class="project-layer flex-center">
+                    <h4> To Do List </h4>
+                    <p>This to-do-list project is developed using HTML, CSS and vanilla JS. Here, you can add task, edit it, mark it complete, and also delete your task. </p>
+                    <a href="https://codernehaa.github.io/To_do_list/" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="./assets/ping-pong.png" alt=""/>
+                <div class="project-layer flex-center">
+                    <h4> Ping-pong-game </h4>
+                    <p>
+                        This ping-pong-game is developed using HTMl, CSS and vanilla javascript. Here, you can enjoy playing this ball moving between two rods and watch your score after every match.
+                    </p>
+                    <a href="https://codernehaa.github.io/ping-pong-game/" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="./assets/joke-generator.png" alt=""/>
+                <div class="project-layer flex-center">
+                    <h4> Joke-Generator-App </h4>
+                    <p>
+                        This Joke generator page is made using react where you can enjoy reading funny english and hindi jokes.
+                    </p>
+                    <a href="https://jokecracker.netlify.app/" target="_blank"> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading text-center"> Contact <span> Me ! </span></h2>
+
+        <form action="#" class="text-center">
+            <!-- The action attribute specifies where to send the form-data when a form is submitted. -->
+            <div class="input-box">
+                <input type="text" placeholder="Full Name"/>
+                <input type="email" placeholder="Email Address"/>
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email subject">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn"/>
+        </form>
+    </section>
+
+    <div class="top flex-center">
+        <a href="#home"> <i class="fa-solid fa-arrow-up"></i> </a>
+    </div>
+
     <script src='script.js'></script>
 </body>
 </html>
